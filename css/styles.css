@@ -1,0 +1,63 @@
+#tabOne{
+	background-color: #e9e9e9;
+    display: inline;
+}
+
+#tabTwo{
+	background-color: #e9e9e9;
+    display: none;
+}
+
+#contactInfo{
+	background-color: #e9e9e9;
+    display: none;
+}
+
+#landing{
+	background-color: #e9e9e9;
+}
+
+#services{
+	background-color: #e9e9e9;
+	display: inline;
+}
+
+#selService{
+	background-color: #e9e9e9;
+	display: none;
+}
+
+#favPlace{
+	background-color: #e9e9e9;
+}
+
+#services{
+	background-color: #e9e9e9;
+}
+
+#myTimetable{
+	background-color: #e9e9e9;
+	display: inline;
+}
+
+#editTime{
+	background-color: #e9e9e9;
+	display: none;
+}
+
+#addTime{
+	background-color: #e9e9e9;
+	display: none;
+}
+
+
+
+#accountPic{
+	text-align: center;
+}
+
+#contactPic{
+	width: 200px;
+	height: 200px;
+	margin-top: 20px;
+}

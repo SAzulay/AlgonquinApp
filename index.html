@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, target-densitydip=device-dpi">
+        <title>My Algonquin Life</title>
+
+        <!-- CSS Links -->        
+        <link rel="stylesheet" type="text/css" href="css/bbui-min.css" />
+        <link rel="stylesheet" type="text/css" href="css/map.css" />
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        
+        <!-- JavaScript Links -->
+        <script type="text/javascript" src="javascript/bbui.js"></script>
+        <script type="text/javascript" src="javascript/jquery-1.10.2.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?sensor=true&libraries=places"></script>
+
+        <script type="text/javascript" src="javascript/landing.js"></script>
+        <script type="text/javascript" src="javascript/timetable.js"></script>
+        <script type="text/javascript" src="javascript/contacts.js"></script>
+        <script type="text/javascript" src="javascript/map.js"></script>
+        <script type="text/javascript" src="javascript/campus.js"></script>
+        <script type="text/javascript" src="local:///chrome/webworks.js"></script>
+
+        <script type="text/javascript">
+          window.addEventListener('load',function() {
+              document.addEventListener('webworksready', function(e) {
+                  bb.init({
+                        bb10HighlightColor: '#00ff03',
+                        actionBarDark: true,
+                        controlsDark: true,
+                        listsDark: false,
+                        bb10ForPlayBook: true,
+
+                        onscreenready: function(element, id) {
+                       
+                        },
+                        ondomready: function(element, id) {
+                            if (id === 'tabOne') {
+                                getContacts();
+                            }
+
+                            if (id === 'services'){
+                                getJson();
+                            }
+
+                            if (id === 'favPlace') {
+                                initGoogleMaps();
+                            }              
+                        }
+                        });
+                  // Open our first screen
+                  bb.pushScreen('landing.html', 'landing');
+              }, false);
+          }, false);
+          
+        </script>        
+    </head> 
+    <body>
+    </body> 
+</html>
+

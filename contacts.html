@@ -1,0 +1,125 @@
+<div id="tabOne" data-bb-type="screen" data-bb-indicator="true" data-bb-effect="slide-left">
+    <div data-bb-type="title" data-bb-caption="Contacts"></div>
+
+    <div data-bb-type="image-list" data-bb-image-effect="fade" data-bb-image-placeholder="images/avatar.png" id="myImageList">
+        <p>No Contacts to Show</p>
+    </div>
+
+    <div data-bb-type="action-bar" data-bb-back-caption="Home">
+        <div data-bb-type="action" data-bb-style="button" data-bb-img="images/avatar.png" onclick="showDB();">Contacts</div>
+        <div data-bb-type="action" data-bb-style="button" data-bb-img="images/icon25.png" onclick="addDB();">Add Contact</div>
+    </div>
+</div>
+
+<div id="tabTwo" data-bb-type="screen" data-bb-indicator="true" data-bb-effect="slide-left">
+    <div data-bb-type="title" data-bb-caption="Add Contact"></div>
+        
+        <div data-bb-type="label-control-container">
+            <div data-bb-type="row">
+                <div data-bb-type="label">First Name</div>
+                <input id="fName" type="text" placeholder="First Name"/>
+            </div>
+        </div>
+        
+        <div data-bb-type="label-control-container">
+            <div data-bb-type="row">
+                <div data-bb-type="label">Last Name</div>
+                <input id="lName" type="text" placeholder="Last Name"/>
+            </div>
+        </div>
+
+        <div data-bb-type="label-control-container">
+            <div data-bb-type="row">
+                <div data-bb-type="label">Phone Number</div>
+            </div>
+        </div>
+        
+        <div data-bb-type="row">
+            <input id="homePhone" type="tel" placeholder="Home Phone Number"/>
+            <input id="mobilePhone" type="tel" placeholder="Mobile Phone Number"/>
+        </div>
+
+        <div data-bb-type="label-control-container">
+            <div data-bb-type="row">
+                <div data-bb-type="label">Email</div>
+            </div>
+        </div>
+
+        <div data-bb-type="">
+            <input id="homeEmail" type="email" placeholder="Home Email"/>
+            <input id="workEmail" type="email" placeholder="Work/School Email"/>
+        </div>
+
+        <div data-bb-type="label-control-container">
+            <div data-bb-type="row">
+                <div data-bb-type="label">Description</div>
+                <input id="description" type="text" placeholder="Where We Met."/>
+            </div>
+        </div>
+
+        <div data-bb-type="row">
+            <div data-bb-type="button" onclick="createBBContact();">Add Contact</div>
+        </div>
+    
+    <div data-bb-type="action-bar" data-bb-back-caption="Home">
+        <div data-bb-type="action" data-bb-style="button" data-bb-img="images/avatar.png" onclick="showDB();">Contacts</div>
+        <div data-bb-type="action" data-bb-style="button" data-bb-img="images/icon25.png" onclick="addDB();">Add Contact</div>
+    </div>
+    
+</div>
+
+<div id="contactInfo" data-bb-type="screen" data-bb-indicator="true" data-bb-effect="slide-left">
+
+    <div data-bb-type="title" data-bb-caption="Contact Info"></div>
+
+        <div data-bb-type="row" id="profilePic">
+            
+            <div id="accountPic" onclick="invokeCameraCard();">
+                <img id="contactPic" src="images/avatar.png">
+            </div>
+
+        </div>
+        
+        <div data-bb-type="row">
+            <div data-bb-type="title">First Name:</div>
+        </div>
+        <div data-bb-type="row">
+            <div id="contact_fName" data-bb-type="text">Given Name</div>
+        </div>
+
+        <div data-bb-type="row">
+            <div data-bb-type="title">last Name:</div>
+        </div>
+        <div data-bb-type="row">
+            <div id="contact_lName" data-bb-type="text">Family Name</div>
+        </div>
+
+        <div data-bb-type="row">
+            <div data-bb-type="title">Phone Numbers:</div>
+        </div>
+        <div data-bb-type="row">
+            <div id="contact_pNum1" data-bb-type="text">Phone1</div>
+            <div id="contact_pNum2" data-bb-type="text">Phone2</div>
+        </div>
+
+        <div data-bb-type="row">
+            <div data-bb-type="title">Emails:</div>
+        </div>
+        <div data-bb-type="row">
+            <div id="contact_email1" data-bb-type="text">Email1</div>
+            <div id="contact_email2" data-bb-type="text">Email2</div>
+        </div>
+
+        <div data-bb-type="row">
+            <div data-bb-type="title">Where We Met:</div>
+        </div>
+        <div data-bb-type="row">
+            <div id="contact_met" data-bb-type="text">Place Met</div>
+        </div>
+
+        <div data-bb-type="action-bar">
+            <div data-bb-type="action" data-bb-style="button" data-bb-img="images/avatar.png" onclick="showDB();">Back</div>
+        </div>
+
+</div>
+
